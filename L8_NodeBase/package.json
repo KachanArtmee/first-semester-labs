@@ -1,0 +1,19 @@
+{
+  "name": "l8-nodebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "nodemon -r dotenv/config index.js dotenv_config_path=.env.development",
+    "build": "node -r dotenv/config index.js dotenv_config_path=.env.production",
+    "deploy": "node -r dotenv/config index.js dotenv_config_path=.env.domain",
+    "use": "node -r dotenv/config use.js dotenv_config_path=.env.development"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
